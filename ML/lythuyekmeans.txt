@@ -1,0 +1,9 @@
+k: số lượng cụm
+D: một tập dữ liệu chứa n phần tử
+Đầu ra: một tập hợp k cụm
+●	Phương pháp
+(1) tùy ý chọn k phần tử từ D làm giá trị trung bình cụm ban đầu
+(2) lặp lại
+    (3) gán từng phần tử cho cụm có nghĩa là phần tử gần nhất
+    (4) khi tất cả các phần tử được gán cho các cụm, hãy tính toán cụm thực tế
+(5) cho đến khi không có sự thay đổi nào giữa cụm mới và cũ
