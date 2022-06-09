@@ -68,9 +68,6 @@ def DFS(initialState, goalTest):
 
 if __name__ == "__main__":
 
-    # nx.draw(G, with_labels=True)
-    # plt.show()
-
     result = BFS('S', 'G')
     print("")
     if result:
