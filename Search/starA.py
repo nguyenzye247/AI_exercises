@@ -97,7 +97,7 @@ def A_Star(tree, start, end):
         explored.append(state)
 
         if state == end:
-            return state
+            return explored
 
         for child in state.children:
             update_cost(tree, child, state)
@@ -171,8 +171,7 @@ if __name__ == "__main__":
     if result:
         s = 'explored: '
         for i in result:
-            s += str(i.label) + ' - ' + str(i.cost) + \
-                ' - ' + str(i.goal_cost) + '\t'
+            s += str(i.name) + '\t'
             print(s)
     else:
         print('Not Found!!')
