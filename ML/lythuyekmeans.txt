@@ -1,9 +1,9 @@
 k: số lượng cụm
-D: một tập dữ liệu chứa n phần tử
+X: một tập dữ liệu chứa n phần tử
 Đầu ra: một tập hợp k cụm
 ●	Phương pháp
-(1) tùy ý chọn k phần tử từ D làm giá trị trung bình cụm ban đầu
+(1) tùy ý chọn k phần tử từ X làm giá trị tâm ban đầu.
 (2) lặp lại
-    (3) gán từng phần tử cho cụm có nghĩa là phần tử gần nhất
-    (4) khi tất cả các phần tử được gán cho các cụm, hãy tính toán cụm thực tế
-(5) cho đến khi không có sự thay đổi nào giữa cụm mới và cũ
+    (3) Tìm tất cả các điểm gần nhất với từng tâm tìm được.
+    (4) Tính toán lại tâm của từng cụm bằng cách tính giá trị trung bình khoảng cách từ tâm cụm cũ tới các điểm thuộc cụm đó.
+(5) Dừng khi vị trí cụm mới và cụm cũ không thay đổi so với nhau.

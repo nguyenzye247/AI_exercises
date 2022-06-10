@@ -19,7 +19,10 @@ class Kmean:
         m = len(X)
         c = np.zeros(m)
         for i in range(m):
+            # tinh khoang cach tu diem X[i] den k tam
+            # vd: distances = [ 69.37709259  41.80362193 126.33989712 181.10241081] (k = 4)
             distances = np.linalg.norm(X[i] - centroids, axis=1)
+            # chon khoang cach nho nhat trong k khoang cach sau do lay index cua no
             c[i] = np.argmin(distances)
         return c
 
