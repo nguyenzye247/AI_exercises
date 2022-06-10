@@ -67,7 +67,6 @@ def DFS(initialState, goalTest):
 
 
 if __name__ == "__main__":
-
     result = BFS('S', 'G')
     print("")
     if result:
