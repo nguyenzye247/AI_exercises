@@ -31,7 +31,7 @@ class Kmean:
         centroids = np.zeros((K, n))
         for k in range(K):
             points_belong_k = X[np.where(idx == k)]
-            centroids[k] = np.mean(points_belong_k, axis=0,)
+            centroids[k] = np.mean(points_belong_k, axis=0)
         return centroids
 
     def find_k_means(self, X, K):

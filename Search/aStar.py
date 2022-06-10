@@ -70,8 +70,7 @@ if __name__ == "__main__":
     if result:
         s = 'explored: '
         for i in result:
-            s += str(i.label) + ' - ' + str(i.cost) + \
-                ' - ' + str(i.goal_cost) + '\t'
+            s += str(i.label) + "  "
             print(s)
     else:
         print('Not Found!!')
